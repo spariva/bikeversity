@@ -1,16 +1,16 @@
 :root{
-    --primary-color: #dc76a2;
-    --secondary-color: #d8363a;
-    --tertiary-color: #dd3675;
-    --quaternary-color: #b44593;
-    --quinary-color: #e05db9;
+    --primary-color: #d69cc5;
+    --secondary-color: #99b5da;
+    --tertiary-color: #fdd118;
+    --quaternary-color: #638ec1;
+    --quinary-color: #99b6d9;
     --senary-color: #d77bf5;
     --septenary-color: #ae83dd;
     --octonary-color: #75e4bf;
 }
 
 body {
-    background-color: rgb(186, 234, 221) !important;
+    background-color: var(--primary-color) !important;
     color: rgb(37, 36, 36) !important;
 }
 
@@ -28,10 +28,8 @@ img {
 
 .cormorant {
     font-family: "Cormorant Garamond", serif;
-    /* {% comment %} color: #d36997;
-  color: #3cc0f9; {% endcomment %} */
     font-weight: 400 !important;
-    color: #dc76a2;
+    color: var(--tertiary-color);
 }
 
 h2 {
