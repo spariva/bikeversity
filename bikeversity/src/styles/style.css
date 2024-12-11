@@ -1,0 +1,57 @@
+:root{
+    --primary-color: #dc76a2;
+    --secondary-color: #d8363a;
+    --tertiary-color: #dd3675;
+    --quaternary-color: #b44593;
+    --quinary-color: #e05db9;
+    --senary-color: #d77bf5;
+    --septenary-color: #ae83dd;
+    --octonary-color: #75e4bf;
+}
+
+body {
+    background-color: rgb(186, 234, 221) !important;
+    color: rgb(37, 36, 36) !important;
+}
+
+img {
+    max-width: 400px;
+    max-height: auto;
+}
+
+#home-icon {
+    max-width: 90px;
+    display: inline-block;
+    padding: -10px;
+    margin: -20px 10px -10px 15px;
+}
+
+.cormorant {
+    font-family: "Cormorant Garamond", serif;
+    /* {% comment %} color: #d36997;
+  color: #3cc0f9; {% endcomment %} */
+    font-weight: 400 !important;
+    color: #dc76a2;
+}
+
+h2 {
+    font-style: italic;
+    font-size: 3.4rem !important;
+}
+
+.card-hover:hover {
+    box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+    transition: ease-in-out 0.4s;
+    scale: 1.1;
+}
+
+.gradient-custom-2 {
+    /* fallback for old browsers */
+    background: #dc76a2;
+
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, #dc76a2, #d8363a, #dd3675, #b44593);
+
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(120deg, #e05db9, #d77bf5, #ae83dd, #75e4bf);
+}

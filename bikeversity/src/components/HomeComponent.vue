@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Home</h1>
+    <h1 class="ms-auto text-bg-danger">Home</h1>
     <div>
       Supongo que aquí pondre una galería, o recuadros a las distintas secciones ?¿ algo visual
     </div>

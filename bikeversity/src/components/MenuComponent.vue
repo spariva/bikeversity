@@ -1,27 +1,26 @@
 <template>
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-      <router-link class="navbar-brand" to="/">Imagen Home</router-link>
-      <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
-        data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
-        aria-label="Toggle navigation">
-        Menu
-        <svg class="svg-inline--fa fa-bars ms-1" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars"
-          role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg="">
-          <path fill="currentColor"
-            d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z">
-          </path>
-        </svg><!-- <i class="fas fa-bars ms-1"></i> Font Awesome fontawesome.com -->
-      </button>
-      <div class="navbar-collapse collapse" id="navbarResponsive" style="">
-        <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
-          <li class="nav-item"><router-link class="nav-link" to="/">Home</router-link></li>
-          <li class="nav-item"><router-link class="nav-link" to="/gallery">Gallery</router-link></li>
-          <li class="nav-item"><router-link class="nav-link" to="/itinerary">Itinerary</router-link></li>
-          <li class="nav-item"><router-link class="nav-link" to="/activities">Activites</router-link></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-        </ul>
-      </div>
-  </nav>
+        <nav class="navbar navbar-expand-lg mb-5" style="background-color:#ffd9ec">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="{% url 'recipes:recipe_list' %}"><img class="navbar-image" src="{% static 'recipes/images/general/onion_purple.jpg' %}" alt="VeggieVibe" aria-current="page" id="home-icon">VeggieVibe</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link active" aria-current="page" href="{% url 'recipes:recipe_list' %}">Home</a>
+                    <a class="nav-link" href="{% url 'users:profile' %}">My account</a>
+                    <form method="post" action="{% url 'logout' %}">
+                        <button class="nav-link" type="submit">Log-out</button>
+                    </form>
+                    <a class="nav-link" href="{% url 'users:profile' %}">Log-in</a>
+                    <a class="nav-link" href="{% url 'users:signup' %}">Sign-up</a>
+                  <a class="nav-link" href="#">API</a>
+                  <a class="nav-link" href="https://github.com/spariva/VeggieVibe/issues" target="_blank">Support</a>
+                  <a class="nav-link" target="_blank" href="https://github.com/spariva">Developer</a>
+                </div>
+              </div>
+            </div>
+          </nav>
 </template>
 
 <script>
