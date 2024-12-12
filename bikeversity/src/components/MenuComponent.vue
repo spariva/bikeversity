@@ -1,6 +1,6 @@
 <template>
   <div>
-    <nav class="navbar navbar-expand-lg mb-5">
+    <nav class="navbar navbar-expand-lg mb-5 fixed-top" style="background-color: var(--primary-color);">
       <div class="container-fluid">
         <router-link class="navbar-brand" to="/"><img class="navbar-image" src="../assets/icons/logoBikeversityNoBg.png"
             alt="Bikeversity" aria-current="page" id="home-icon">Bikeversity</router-link>
