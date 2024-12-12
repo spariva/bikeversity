@@ -1,5 +1,5 @@
 :root{
-    --primary-color: rgb(214, 156, 197);
+    --primary-color: #d69cc5;
     --secondary-color: #99b5da;
     --tertiary-color: rgb(253, 209, 24);
     --quaternary-color: rgb(99, 142, 193);
@@ -12,11 +12,6 @@
 body {
     background-color: var(--primary-color) !important;
     color: rgb(37, 36, 36) !important;
-}
-
-img {
-    max-width: 400px;
-    max-height: auto;
 }
 
 #home-icon {
