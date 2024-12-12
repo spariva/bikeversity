@@ -1,20 +1,36 @@
 <template>
   <div>
-    <nav class="navbar navbar-expand-lg mb-5" style="background-color:#638ec1">
+    <nav class="navbar navbar-expand-lg mb-5">
       <div class="container-fluid">
-        <a class="navbar-brand" href="{% url 'recipes:recipe_list' %}"><img class="navbar-image"
-            src="{% static 'recipes/images/general/onion_purple.jpg' %}" alt="VeggieVibe" aria-current="page"
-            id="home-icon">VeggieVibe</a>
+        <router-link class="navbar-brand" to="/"><img class="navbar-image" src="../assets/icons/logoBikeversityNoBg.png"
+            alt="Bikeversity" aria-current="page" id="home-icon">Bikeversity</router-link>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
           aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <a class="nav-link active" aria-current="page" href="{% url 'recipes:recipe_list' %}">Home</a>
-            <a class="nav-link" href="#">API</a>
-            <a class="nav-link" href="https://github.com/spariva/VeggieVibe/issues" target="_blank">Support</a>
-            <a class="nav-link" target="_blank" href="https://github.com/spariva">Developer</a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Route
+              </a>
+              <ul class="dropdown-menu">
+                <li><router-link class="dropdown-item" to="/itinerary">Itinerary</router-link></li>
+                <li><router-link class="dropdown-item" to="/activities">Activities</router-link></li>
+              </ul>
+            </li>
+            <router-link class="nav-link" to="/gallery">Gallery</router-link>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                About us
+              </a>
+              <ul class="dropdown-menu">
+                <li v-for="asociacion in asociaciones" :key="asociacion"><router-link class="dropdown-item" :to="'/info/' + asociacion">{{ asociacion }}</router-link></li>
+              </ul>
+            </li>
+            <a class="nav-link" to="#contact">Contact</a>
           </div>
         </div>
       </div>
@@ -94,8 +110,12 @@
 <script>
 export default {
   name: 'MenuComponent',
-  
-  
+  data(){
+    return {
+      asociaciones: ["Bikeversity", "DeBerlinSon"]
+    }
+  }
+
 }
 </script>
 

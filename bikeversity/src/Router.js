@@ -22,10 +22,10 @@ const routes = [
         path: "/activities", component: ActivitiesComponent
     },
     {
-        path: "/bikeversity", component: BikeversityComponent
+        path: "/info/bikeversity", component: BikeversityComponent
     },
     {
-        path: "/deberlinson", component: DeberlinsonComponent
+        path: "/info/deberlinson", component: DeberlinsonComponent
     }
 ]
 
