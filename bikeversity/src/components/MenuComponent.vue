@@ -108,6 +108,7 @@
 </template>
 
 <script>
+
 export default {
   name: 'MenuComponent',
   data(){
@@ -116,6 +117,8 @@ export default {
     }
   }
 
+
+  
 }
 </script>
 
