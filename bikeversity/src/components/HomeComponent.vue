@@ -6,10 +6,10 @@
         <img src="../assets/images/fotogrupo.jpg" class="d-block mx-lg-auto img-fluid rounded-5" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
       </div>
       <div class="col-lg-6">
-        <h1 class="display-5 fw-bold text-primary-emphasis lh-1 mb-3">Queers on rural areas</h1>
+        <h1 class="display-5 fw-bold text-primary lh-1 mb-3 cormorant">Queers on rural areas</h1>
         <p class="lead">Texto random sobre bikeversity y qué es etc etc. We believe blabla</p>
         <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-          <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Primary</button>
+          <button type="button" class="btn btn-info btn-lg px-4 me-md-2 btn-blue">Primary</button>
           <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button>
         </div>
       </div>

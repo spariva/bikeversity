@@ -2,18 +2,25 @@
     --primary-color: #d69cc5;
     --secondary-color: #99b5da;
     --tertiary-color: rgb(253, 209, 24);
-    --quaternary-color: rgb(99, 142, 193);
+    --quaternary-color: #638ec1;
     --quinary-color: #99b6d9;
     --senary-color: #d69cc5;
     --septenary-color: #ae83dd;
     --octonary-color: #75e4bf;
+    --ej1: #d385ed;
+    --ej2: #f8c948;
 }
 
 body {
     overflow: hidden;
     overflow-y: scroll;
+    background-color: var(--ej2);
 }
 
+.btn-blue {
+    background-color: var(--secondary-color) !important;
+    color: white !important;
+}
 /* Hide scrollbar for Chrome, Safari and Opera */
 *::-webkit-scrollbar {
     display: none;
@@ -21,7 +28,7 @@ body {
 }
 
 nav {
-    background-color: var(--tertiary-color);
+    background-color: var(--ej1);
 }
 
 /* Hide scrollbar for IE, Edge and Firefox */
@@ -41,9 +48,9 @@ nav {
 }
 
 .cormorant {
-    font-family: "Cormorant Garamond", serif;
+    font-family: "comic sans ms", cursive;
     font-weight: 400 !important;
-    color: var(--tertiary-color);
+    color: var(--quaternary-color) !important;
 }
 
 h2 {
